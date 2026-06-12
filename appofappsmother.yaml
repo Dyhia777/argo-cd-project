@@ -14,3 +14,5 @@ spec:
     namespace: argo-cd
   syncPolicy:
     automated: null
+    syncOptions:
+      - CreateNamespace=true
