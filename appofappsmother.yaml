@@ -4,11 +4,11 @@ metadata:
   name: app-of-apps-test
   namespace: argo-cd
 spec:
-  project: gitops-app
+  project: gitops
   source:
     repoURL: https://github.com/Dyhia777/argo-cd-project.git
     targetRevision: main
-    path: my-argo-apps-child
+    path: my-argo-apps-child/
   destination:
     server: https://kubernetes.default.svc
     namespace: argo-cd

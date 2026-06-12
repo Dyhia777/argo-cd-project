@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: gitops-app
+  name: gitops
   namespace: argo-cd
 spec:
   description: GitOps project
