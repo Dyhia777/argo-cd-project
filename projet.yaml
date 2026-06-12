@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: gitops-app
+  namespace: argo-cd
+spec:
+  description: GitOps project
+
+  sourceRepos:
+    - https://github.com/Dyhia777/argo-cd-project.git
+
+  destinations:
+    - server: https://kubernetes.default.svc
+      namespace: "*"
+
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
