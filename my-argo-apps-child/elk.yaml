@@ -7,7 +7,7 @@ spec:
   project: gitops-app
   source:
     repoURL: https://helm.elastic.co
-    chart: charts/elasticsearch
+    chart: elasticsearch
     targetRevision: 8.5.1
   destination:
     server: https://kubernetes.default.svc
