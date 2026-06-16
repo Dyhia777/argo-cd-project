@@ -9,10 +9,10 @@ spec:
     repoURL: https://helm.elastic.co
     chart: elasticsearch
     targetRevision: 8.5.1
-    helm:
-      values: |
-        pushgateway:
-          enabled: false
+    #helm:
+     # values: |
+      #  pushgateway:
+       #   enabled: false
   destination:
     server: https://kubernetes.default.svc
     namespace: default
