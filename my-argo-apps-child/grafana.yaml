@@ -4,7 +4,7 @@ metadata:
   name: grafana
   namespace: default
 spec:
-  project: gitops-ops
+  project: gitops-app
   source:
     repoURL: https://grafana.github.io/helm-charts
     chart: grafana

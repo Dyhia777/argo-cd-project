@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingress
   namespace: default
 spec:
-  project: gitops-ops
+  project: gitops-app
   source:
     repoURL: https://github.com/Dyhia777/argo-cd-project.git
     targetRevision: main
