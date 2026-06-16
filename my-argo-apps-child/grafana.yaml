@@ -2,20 +2,20 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: grafana
-  namespace: argo-cd
+  namespace: default
 spec:
-  project: gitops
+  project: gitops-ops
   source:
     repoURL: https://grafana.github.io/helm-charts
     chart: grafana
     targetRevision: 9.3.0
     helm:
-      values: |
+      values:
         pushgateway:
           enabled: false
   destination:
     server: https://kubernetes.default.svc
-    namespace: argo-cd
+    namespace: default
   syncPolicy:
     automated:
       prune: true

@@ -2,16 +2,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-of-apps-test
-  namespace: argo-cd
+  namespace: default
 spec:
-  project: gitops
+  project: gitops-app
   source:
     repoURL: https://github.com/Dyhia777/argo-cd-project.git
     targetRevision: main
     path: my-argo-apps-child/
   destination:
     server: https://kubernetes.default.svc
-    namespace: argo-cd
+    namespace: default
   syncPolicy:
     automated: null
     syncOptions:
