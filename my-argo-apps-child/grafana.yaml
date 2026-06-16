@@ -7,7 +7,7 @@ spec:
   project: gitops-app
   source:
     repoURL: https://grafana.github.io/helm-charts
-    chart: grafana
+    chart: charts/grafana-app
     targetRevision: 9.3.0
     #helm:
      # values: |

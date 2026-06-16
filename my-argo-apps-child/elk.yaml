@@ -7,7 +7,7 @@ spec:
   project: gitops-app
   source:
     repoURL: https://helm.elastic.co
-    chart: elasticsearch
+    chart: charts/ELK
     targetRevision: 8.5.1
     #helm:
      # values: |
